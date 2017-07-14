@@ -41,19 +41,19 @@ Manual via git :
  3. Setup web server
  4. Setup cron
 
-### Konfigurasi apache2 ###
+### Konfigurasi apache 2.4 ###
 
     <Virtualhost *:80>
-    ServerName ipositif.domain
-    DocumentRoot "/var/www/html/ipositif/public"
-    <Directory "/var/www/html/ipositif/public">
-        RewriteEngine on
-        RewriteCond %{REQUEST_FILENAME} !-f
-        RewriteCond %{REQUEST_FILENAME} !-d
-        RewriteRule . index.php
-    </Directory>
-
-</Virtualhost>
+      ServerName ipositif.domain
+      DocumentRoot "/var/www/html/ipositif/public"
+      <Directory "/var/www/html/ipositif/public">
+          RewriteEngine on
+          RewriteCond %{REQUEST_FILENAME} !-f
+          RewriteCond %{REQUEST_FILENAME} !-d
+          RewriteRule . index.php
+          Require all granted
+      </Directory>
+    </Virtualhost>
 
 ### Konfigurasi cron ###
 
