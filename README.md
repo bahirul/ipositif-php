@@ -23,6 +23,7 @@ Implementasi untuk [pi-hole](https://pi-hole.net/) dan bind9.
 
  - Validasi domain otomatis
  - Blacklist dan Whitelist dari Kominfo Server
+ - Bind RPZ Format (Upcoming)
 
 ### Instalasi ###
 
