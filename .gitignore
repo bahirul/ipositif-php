@@ -1,3 +1,5 @@
 # generated domain list
-/data/kominfo/blacklist/*
-/data/kominfo/whitelist/*
+/data/kominfo/blacklist/*.domain
+/data/kominfo/blacklist/*.txt
+/data/kominfo/whitelist/*.domain
+/data/kominfo/whitelist/*.txt
