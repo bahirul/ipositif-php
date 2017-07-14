@@ -27,12 +27,17 @@ Implementasi untuk [pi-hole](https://pi-hole.net/) dan bind9.
 
 ### Instalasi ###
 
-Via composer : `composer create-project bahirul/ipositif:"dev-master"`
+Via composer : 
+
+1. install : `composer create-project bahirul/ipositif:"dev-master"`
+2. composer update
+3. Setup web server
+4. Setup cron
 
 Manual via git :
 
  1. git clone https://github.com/bahirul/ipositif.git
- 2. composer install
+ 2. composer update
  3. Setup web server
  4. Setup cron
 
