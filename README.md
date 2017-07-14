@@ -61,8 +61,8 @@ path-applikasi : root folder ipositif (contoh: /var/www/html/ipositif)
 
 update cron kominfo list dieksekusi setiap hari senin jam 10 pagi.
 
-    * 10 * * mon php path-applikasi/ipositif kominfo:fetch blacklist
-    * 10 * * mon php path-applikasi/ipositif kominfo:fetch whitelist
+    0 10 * * mon <cron-user> php <path-applikasi>/ipositif kominfo:fetch blacklist
+    0 10 * * mon <cron-user> php <path-applikasi>/ipositif kominfo:fetch whitelist
     
 ### Url Download list ###
 
