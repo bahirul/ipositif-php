@@ -13,7 +13,7 @@ class DomainValidator{
 	 * @return boolean
 	 */
 	public function validate($domain){
-		$tld = false;
+		$tld = true;
 
 		//replace -. caracter with .
 		$domain = str_replace('-.','.', $domain);
