@@ -27,7 +27,7 @@ Implementasi untuk [pi-hole](https://pi-hole.net/) dan bind9.
 
 ### Instalasi ###
 
-Via composer : `composer create-project bahirul/ipositif`
+Via composer : `composer create-project bahirul/ipositif:"dev-master"`
 
 Manual via git :
 
