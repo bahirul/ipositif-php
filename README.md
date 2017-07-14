@@ -1,4 +1,4 @@
-ipositif
+IPOSITIF
 =======
 
 Internet postif domain list generator.
