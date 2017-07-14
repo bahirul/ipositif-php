@@ -3,7 +3,6 @@
     "description": "Internet Positif Generator",
     "type": "project",
     "license": "BSD-3-Clause",
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "nikic/fast-route": "^1.2",
