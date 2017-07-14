@@ -1,14 +1,13 @@
 ipositif
 =======
 
--------------------
-
 Internet postif domain list generator.
 
 Web untuk generate domain blacklist atau whitelist.
 Implementasi untuk [pi-hole](https://pi-hole.net/) dan bind9.
 
 ### Stuktur Direktori ###
+
 -------------------
 
       base/               contains base and init class
@@ -32,7 +31,7 @@ Implementasi untuk [pi-hole](https://pi-hole.net/) dan bind9.
  3. Setup web server
  4. Setup cron
 
-####konfigurasi apache2 ###
+### Konfigurasi apache2 ###
 
     <Virtualhost *:80>
     ServerName ipositif.domain
@@ -46,14 +45,14 @@ Implementasi untuk [pi-hole](https://pi-hole.net/) dan bind9.
 
 </Virtualhost>
 
-### konfigurasi cron ###
+### Konfigurasi cron ###
 
 path-applikasi : root folder ipositif (contoh: /var/www/html/ipositif)
 
     5 8 * * mon php path-applikasi/ipositif kominfo:fetch blacklist
     5 8 * * mon php path-applikasi/ipositif kominfo:fetch whitelist
     
-### download list ###
+### Url Download list ###
 
  1. kominfo blacklist : http://ipositif.domain/kominfo/blacklist
  2. kominfo whitelist : http://ipositif.domain/kominfo/whitelist
