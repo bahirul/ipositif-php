@@ -48,9 +48,10 @@ Implementasi untuk [pi-hole](https://pi-hole.net/) dan bind9.
 ### Konfigurasi cron ###
 
 path-applikasi : root folder ipositif (contoh: /var/www/html/ipositif)
+update cron kominfo list dieksekusi setiap hari senin jam 10 pagi.
 
-    5 8 * * mon php path-applikasi/ipositif kominfo:fetch blacklist
-    5 8 * * mon php path-applikasi/ipositif kominfo:fetch whitelist
+    * 10 * * mon php path-applikasi/ipositif kominfo:fetch blacklist
+    * 10 * * mon php path-applikasi/ipositif kominfo:fetch whitelist
     
 ### Url Download list ###
 
