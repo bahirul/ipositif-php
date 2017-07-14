@@ -27,6 +27,10 @@ Implementasi untuk [pi-hole](https://pi-hole.net/) dan bind9.
 
 ### Instalasi ###
 
+Via composer : `composer create-project bahirul/ipositif`
+
+Manual via git :
+
  1. git clone https://github.com/bahirul/ipositif.git
  2. composer install
  3. Setup web server
