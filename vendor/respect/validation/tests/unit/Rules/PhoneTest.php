@@ -11,12 +11,14 @@
 
 namespace Respect\Validation\Rules;
 
+use Respect\Validation\TestCase;
+
 /**
  * @group  rule
  * @covers Respect\Validation\Rules\Phone
  * @covers Respect\Validation\Exceptions\PhoneException
  */
-class PhoneTest extends \PHPUnit_Framework_TestCase
+class PhoneTest extends TestCase
 {
     protected $phoneValidator;
 
@@ -93,6 +95,7 @@ class PhoneTest extends \PHPUnit_Framework_TestCase
             ['5555555'],
             ['555.5555'],
             ['555 5555'],
+            ['+1 (555) 555 5555'],
         ];
     }
 
@@ -101,6 +104,8 @@ class PhoneTest extends \PHPUnit_Framework_TestCase
         return [
             [''],
             ['123'],
+            ['(11- 97777-7777'],
+            ['-11) 97777-7777'],
             ['s555-5555'],
             ['555-555'],
             ['555555'],
@@ -124,6 +129,7 @@ class PhoneTest extends \PHPUnit_Framework_TestCase
             ['+55()555 5555'],
             ['03610666-5'],
             ['text'],
+            ["555\n5555"],
         ];
     }
 }

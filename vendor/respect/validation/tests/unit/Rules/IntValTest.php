@@ -11,12 +11,14 @@
 
 namespace Respect\Validation\Rules;
 
+use Respect\Validation\TestCase;
+
 /**
  * @group  rule
  * @covers Respect\Validation\Rules\IntVal
  * @covers Respect\Validation\Exceptions\IntValException
  */
-class IntValTest extends \PHPUnit_Framework_TestCase
+class IntValTest extends TestCase
 {
     protected $intValidator;
 
@@ -52,6 +54,8 @@ class IntValTest extends \PHPUnit_Framework_TestCase
             ['165'],
             [123456],
             [PHP_INT_MAX],
+            ['06'],
+            ['0']
         ];
     }
 
@@ -61,7 +65,11 @@ class IntValTest extends \PHPUnit_Framework_TestCase
             [''],
             [null],
             ['a'],
+            ['1.0'],
+            [1.0],
             [' '],
+            [true],
+            [false],
             ['Foo'],
             ['1.44'],
             [1e-5],

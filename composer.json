@@ -1,5 +1,5 @@
 {
-	"name": "bahirul/ipositif",
+    "name": "bahirul/ipositif",
     "description": "Internet Positif Generator",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -7,12 +7,12 @@
         "php": ">=5.4.0",
         "nikic/fast-route": "^1.2",
         "league/container": "^2.4",
-        "symfony/http-foundation": "^3.3",
+        "symfony/http-foundation": "3.4.35",
         "filp/whoops": "^2.1",
         "guzzlehttp/guzzle": "~6.0",
-		"twig/twig": "~2.0",
-		"respect/validation": "^1.1",
-		"symfony/console": "^3.3"
+	"twig/twig": "~2.0",
+	"respect/validation": "^1.1",
+	"symfony/console": "^3.3"
     },
     "autoload": {
         "psr-4": {
